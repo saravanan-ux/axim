@@ -1,5 +1,5 @@
 # 1️⃣ Build frontend
-FROM node:10 AS ui-build
+FROM node:10 AS ui-run
 WORKDIR /usr/src/app
 COPY my-app/ ./my-app/
 RUN cd my-app && npm install && npm run build
